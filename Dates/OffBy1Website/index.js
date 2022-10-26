@@ -1,15 +1,18 @@
 "use strict";
 
-function init() {
-    const showdateBtn = document.getElementById("showdateBtn");
-    showdateBtn.onclick = showdateBtnOnClick;
+window.onload = init;
+
+function init() 
+{
+    const dateBtn = document.getElementById("showdateBtn");
+    dateBtn.onclick = onshowdateBtnClick;
+
 }
 
-function showdateBtnOnClick() {
-    let dateInput = document.getElementById("dateInput");
-    let date = dateInput.value;
-    let newDate = new Date(date);
+function onshowdateBtnClick() 
+{
+    let date = document.getElementById("myDate").value;
+    let d = new Date(date);
     let presentDate = document.getElementById("presentDate");
-    presentDate.innerhtml = newDate.toString();
+    presentDate.innerHTML = d.toString();
 }
-

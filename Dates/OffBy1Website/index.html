@@ -5,29 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Date</title>
+    <script src="index.js"></script>
 </head>
 
 <body>
     <main>
+    <p> Please put in Date (MM/DD/YYYY): </p>
+    <input type="date" id="myDate">
 
-        <div>
-            <p> Please put in Date (MM/DD/YYYY): </p>
-            <p><input type="date" id="dateInput" /></p>
-        </div>
-
-        <div>
-            <input type="button" id="showdateBtn" value="Show Date">
-        </div>
-        </div>
-
-        <div>
-            <p>The date is currently:</p>
-            <p id="presentDate" value=""/></p>
-        </div>
-
+    <button id="showdateBtn" type="button">Show Date</button>
+        <hr>
+    <p>The current date is: </p>
+    <p id="presentDate"></p>
     </main>
-    <script> src="index.js"</script>
 </body>
 
 </html>
